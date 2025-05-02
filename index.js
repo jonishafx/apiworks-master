@@ -31,7 +31,7 @@ app.get('/', (req, res) => {
 app.use('/auth', authRoutes);
 app.use('/products', authenticateToken, productRoutes);
 
-const PORT = 3000;
+const PORT = 10000;
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
